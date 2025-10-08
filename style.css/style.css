@@ -1,0 +1,32 @@
+:root{
+   --bg:#c2b5d1;
+   --card:#a9d2ee;
+   --text:#a8b7e0;
+   --muted:#a4d2d8;
+   --primary:#a0d1c2;
+   --border:#e7b5e3;
+}
+
+.dark{
+    --bg:#422464;
+    --card:#084772;
+    --text:#1c2f61;
+    --muted:#07515c;
+    --primary:#216450;
+    --border:#6d2c67;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+}
+h1, h2 {
+    margin: 0 0 .5rem;
+
+}
+
+.conteudo {
+    max-width: 100vh;
+    margin: 1rem auto; 
+
+}
