@@ -27,6 +27,9 @@ h1, h2 {
 
 .conteudo {
     max-width: 100vh;
-    margin: 1rem auto; 
+    margin: 1rem auto;
+    padding: 0 1rem;
+
 
 }
+
