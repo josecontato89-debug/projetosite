@@ -1,19 +1,19 @@
 :root{
-   --bg:#c2b5d1;
-   --card:#a9d2ee;
-   --text:#a8b7e0;
-   --muted:#a4d2d8;
-   --primary:#a0d1c2;
-   --border:#e7b5e3;
+   --bg:#e7cd93;
+   --card:#c49e6d;
+   --text:#e4a67d;
+   --muted:#5e3713;
+   --primary:#ebc285;
+   --border:#eeda69;
 }
 
 .dark{
-    --bg:#422464;
-    --card:#084772;
-    --text:#1c2f61;
-    --muted:#07515c;
-    --primary:#216450;
-    --border:#6d2c67;
+    --bg:#df9d0f;
+   --card:#c07411;
+   --text:#df6818;
+   --muted:#695f55;
+   --primary:#dfb910;
+   --border:#e7400d;
 }
 
 body{
@@ -39,4 +39,132 @@ h1, h2 {
     padding: 0.75rem;
     border-bottom: 1px solid var(--border);
     background-color: var(--card);
+}
+
+.cabecalho h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.conteudo-formulario {
+    background-color: var(--card);
+    border: 1px solid var (--border);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem ;
+    box-shadow: 0 10px 0 rgba(00,0,0,0.03);
+}
+
+.grade {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35;
+    font-size: 0.95rem;
+}
+
+input , select{
+    margin-top:5px;
+padding: 0.6rem;
+border: 1px solid var(--border);
+border-radius: 10px;
+background: transparent;
+color: inherit
+}
+
+input::placeholder{
+    color: var(--muted);
+}
+
+.botoes{
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 0.75rem;
+}
+
+button{
+    padding: 0.5rem 0.7rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: #210000;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button.outline {
+    background: transparent;
+    color: #5e3713;
+}
+
+button:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.mensagem{
+    min-height: 1.25rem;
+    color: #e70d0d;
+    margin: 0.25rem 0 0;
+}
+
+.cabecalho-tabela{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75;
+}
+
+.secao-tabela{
+    overflow: auto;
+    border: 1px solid #4e3d27;
+    border-radius: 10px;
+
+}
+
+.tabela{
+    width: 100%;
+}
+
+th, td{
+    padding: 0.6rem;
+    border-bottom: 1px solid #5e3713;
+    text-align: left;
+
+}
+
+th{
+    background-color: #775239;
+    font-weight: 700;
+}
+
+tr:hover{
+    background-color: #c49e6d;
+}
+
+.resumo{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    padding: 0.5rem 0.2rem;
+    color: #632700;
+}
+
+.rodape{
+  text-align: center;
+  padding: 1rem;
+  color: #695f55;
 }
