@@ -7,6 +7,7 @@
     <title>Loja Bodetech</title>
     <link rel="stylesheet" href="style.css/reset.css">
     <link rel="stylesheet" href="style.css/style.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <!--Cabeçalho-->
@@ -46,12 +47,13 @@
                 <button type="submit" id="btnAdd">Adicionar</button>
                 <button type="button" id="btnLimpar">Limpar</button>
             </div>
+            <p id="mensagem" class="mensagem"></p>
            </form>
         </section>
         <section class="conteudo-formulario">
             <div class="cabecalho-tabela">
                 <h2>Produtos Cadastrados</h2>
-                <input type="search" name="" id="bucar" placeholder="Buscar Produtos">
+                <input type="search" name="" id="buscar" placeholder="Buscar Produtos">
             </div>
             <div class="secao-tabela">
                 <table class="tabela">
@@ -71,8 +73,8 @@
                 </table>
             </div>
             <div class="resumo">
-                <span>Total de Itens: <strong>0</strong></span>
-                <span>Valor Total: <strong>0</strong></span>
+                <span>Total de Itens: <strong id="totalItens">0</strong></span>
+                <span>Valor Total: <strong id="valorTotal">0</strong></span>
             </div>
         </section>
     </main>
